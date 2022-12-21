@@ -1,38 +1,62 @@
+.vpfr_timers,.vpfr_player_controls button,.vpfr_volume_progress_bar {
+  display: none!important;
+}
+
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+
 }
 
-.App-link {
-  color: #61dafb;
+/* .forwardArrow{
+  width: 50px;
+  height: 50px;
+  color: #000;
+  z-index: 200;
+  position: absolute;
+  right: 10px;
+  top: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardGroups{
+  display: flex;
+  flex-direction: row;
+  
+
 }
+
+.carousel.carousel-slider .control-arrow{
+
+ display: none; 
+}
+.carousel.carousel-slider .control-arrow svg{
+  color: #000;
+}
+.carousel .carousel-status{
+  display: none!important;
+} */
+
+.rec-dot{
+  box-shadow: 0 0 1px 3px #1877f2!important;
+}
+.rec-dot_active{
+  
+  background-color: #1877f2!important;
+}
+.rec-arrow-right,.rec-arrow-left{
+  background-color: transparent!important;
+  color: black!important;
+  box-shadow: none!important;
+  font-weight: bolder!important;
+  font-size: 30px!important;
+}
+
+.rec-arrow-right:hover,.rec-arrow-left:hover{
+  color: #1877f2!important;
+  background-color: white!important;
+}
+
