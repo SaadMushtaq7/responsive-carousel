@@ -1,17 +1,48 @@
 import styled from "styled-components";
 
+export const CustomCarouselContainer = styled.div`
+position: relative;
+.backArrow{
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    position: absolute;
+    top: 250px;
+    left: 2px;
+    cursor: pointer;
+}
+.forwardArrow{
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    position: absolute;
+    top: 250px;
+    right: -10px;
+    cursor: pointer;
+}
+`
+
+export const CarouselCardsContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0 10px;
+`
+
 export const CarouselCardContainer = styled.div`
- display: flex;
+  display: flex;
   flex-direction: column;
   height: 450px;
-  width: 90%;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
 `
 
 export const CoverImageAndTwitterIcon = styled.div`
-        width: 100%;
+    width: 100%;
     height: 230px;
     position: relative;
 `
@@ -37,10 +68,8 @@ top: 10px;
 }
 `
 
-
-
 export const UserProfile = styled.div`
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -48,8 +77,9 @@ export const UserProfile = styled.div`
 `
 
 export const ProfileImageContainer = styled.div`
-    width: 35%;
-    height: 100%;
+    width: 25%;
+    max-width: 100px;
+    height: 80px;
     z-index: 100;
     position: relative;
 
@@ -61,6 +91,7 @@ export const ProfileImageContainer = styled.div`
         border-radius: 50%;
         position: absolute;
         top: -25px;
+        left: 5px;
 
     }
 `
@@ -83,7 +114,7 @@ p{
 `
 
 export const CreationDate = styled.p`
-width: 20%;
+    width: 20%;
     padding: 0;
     margin: 0;
     margin-top: 10px;
@@ -94,7 +125,7 @@ width: 20%;
 
 
 export const DescriptionContainer = styled.div`
-height: 100px;
+height: 120px;
 width: 100%;
 overflow: hidden;
 white-space: initial;

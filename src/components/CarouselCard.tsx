@@ -28,6 +28,7 @@ interface carouselCardProps {
   isVideo: boolean;
   twitterIconPosStart: boolean;
   otherIconsPosStart: boolean;
+  cardSize: number;
 }
 
 export const CarouselCard: FC<carouselCardProps> = ({
@@ -41,17 +42,19 @@ export const CarouselCard: FC<carouselCardProps> = ({
   isVideo,
   twitterIconPosStart,
   otherIconsPosStart,
+  cardSize,
 }) => {
   const carouselRef = useRef<any>(null);
 
   return (
-    <CarouselCardContainer ref={carouselRef}>
+    <CarouselCardContainer
+      style={{ width: `${100 / cardSize}%`, maxWidth: "300px" }}
+      ref={carouselRef}
+    >
       <CoverImageAndTwitterIcon>
         {isVideo ? (
           <ReactVideoPlayer
-            width={
-              carouselRef.current ? carouselRef.current.offsetWidth : "320px"
-            }
+            width={`${100 / cardSize}%`}
             height="230px"
             url={coverFile}
           />

@@ -2,7 +2,9 @@
   display: none!important;
 }
 
-
+.vpfr_container{
+  width: 100%!important;
+}
 .App {
   font-family: sans-serif;
   display: flex;
@@ -12,51 +14,6 @@
 
 }
 
-/* .forwardArrow{
-  width: 50px;
-  height: 50px;
-  color: #000;
-  z-index: 200;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-}
-
-.cardGroups{
-  display: flex;
-  flex-direction: row;
-  
-
-}
-
-.carousel.carousel-slider .control-arrow{
-
- display: none; 
-}
-.carousel.carousel-slider .control-arrow svg{
-  color: #000;
-}
 .carousel .carousel-status{
   display: none!important;
-} */
-
-.rec-dot{
-  box-shadow: 0 0 1px 3px #1877f2!important;
 }
-.rec-dot_active{
-  
-  background-color: #1877f2!important;
-}
-.rec-arrow-right,.rec-arrow-left{
-  background-color: transparent!important;
-  color: black!important;
-  box-shadow: none!important;
-  font-weight: bolder!important;
-  font-size: 30px!important;
-}
-
-.rec-arrow-right:hover,.rec-arrow-left:hover{
-  color: #1877f2!important;
-  background-color: white!important;
-}
-
